@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Web Engineering Lab 1</title>
+    <style>
+        .container {
+            border: 6px solid black;
+            border-radius: 20px;
+            text-align: center;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+        }
+        div {
+            margin: 10px;
+        }
+        div input {
+            margin-left: 100px;
+        }
+        select {
+            margin-left: 100px;
+        }
+        #pass {
+            margin-left: 56px;
+        }
+        #ema {
+            margin-left: 10px;
+        }
+        button {
+            width: 90px;
+            height: 30px;
+            margin-top: 20px;
+            margin-left: 150px;
+            background-color: rgb(248, 112, 62);
+            border: none;
+            cursor: pointer;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+        button:hover {
+            background-color: rgb(189, 60, 8);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Student Registeration Form</h1>
+    </header>
+    <main>
+        <div class="container">
+            <form action="/">
+                <div>
+                    <label>Name: </label>
+                    <input type="text" placeholder="Enter Name...">
+                </div>
+                <div>
+                    <label>Enter Email Address</label>
+                    <input type="email" id="ema">
+                </div>
+                <div>
+                    <label>Set Password</label>
+                    <input type="password" id="pass" placeholder="Enter Password...">
+                </div>
+                <div>
+                    <label>Age: </label>
+                    <input type="number">
+                </div>
+                <div>
+                    <label>Gender</label>
+                    <input type="radio" name="gender" value="Male">Male
+                    <input type="radio" name="gender" value="Female">Female
+                </div>
+                <div>
+                    <lable>House</lable>
+                    <input type="checkbox">Jinnah
+                    <input type="checkbox">Iqbal
+                </div>
+                <div>
+                    <label>Class</label>
+                    <select>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                    </select>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

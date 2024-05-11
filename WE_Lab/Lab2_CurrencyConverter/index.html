@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Engineering Lab 2</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Currency Converter</h1>
+        <div class="row">
+            <select id="fromCurrency">
+                <option value="Dollar" selected>Dollar</option>
+                <option value="PKR">PKR Rupees</option>
+                <option value="Euro">Euro</option>
+            </select>
+            <span>TO</span>
+            <select id="toCurrency">
+                <option value="Dollar">Dollar</option>
+                <option value="PKR" selected>PKR Rupees</option>
+                <option value="Euro">Euro</option>
+            </select>
+        </div>
+        <div class="row">
+            <input type="number" id="Amount" placeholder="Enter Amount">
+            <button id="btn" onclick="handleCurrencyConverter()">Calculate</button>
+            <input type="number" id="output" readonly>
+        </div>
+
+        <div class="text">
+            <p id="primeText"></p>
+            <div id="primeNo"></div>
+            <p id="evenText"></p>
+            <div id="evenNo"></div>
+        </div>
+        <div class="matcher">
+            <div id="indexprime"></div>
+            <div id="indexeven"></div>
+            <div id="indexMatcher"></div>
+        </div>
+    </div>
+</body>
+</html>

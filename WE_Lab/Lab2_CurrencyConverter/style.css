@@ -1,0 +1,51 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    padding: 10px;
+}
+.container .row {
+    border: 2px solid grey;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+select {
+    padding: 6px;
+    width: 20%;
+}
+input {
+    width: 20%;
+    padding: 6px;
+}
+#btn {
+    width: 100px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: black;
+    color: #fff;
+}
+
+.text {
+    border: 2px solid black;
+    width: 50%;
+    padding: 10px;
+    border-radius: 2px;
+
+}
+.matcher {
+    margin-top: 10px;
+    width: 50%;
+}
+
+[id*="p-"]:hover {
+    background-color:lightblue;
+}
+
+[id*="e-"]:hover {
+    background-color: lightgreen;
+}
