@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Engineering Assignment 2</title>
+    <style>
+        fieldset {
+            width: 40%;
+        }
+        legend {
+            font-size: 1.5em;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        h4 {
+            font-size: 1em;
+            width: 100%;
+        }
+        input {
+            border: 2px solid grey;
+            width: 80%;
+            height: 25px;
+            margin-left: 3px;
+            border-radius: 1em;
+        }
+        textarea {
+            width: 98%;
+            height: 50px;
+        }
+        button {
+            width: 20%;
+            margin-top: 1em;
+            text-align: center;
+            padding: 0.5em;
+            margin-bottom: 0.4em;
+            border: none;
+            border-radius: 1em;
+            background-color: black;
+            color: aliceblue;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div style="margin: 0 auto; width: 100%;text-align: -webkit-center;">
+        <form action="file.php" method="post">
+
+            <fieldset>
+                <legend>DataBase Query</legend>
+                <table>
+                    <tr>
+                        <td>Server Name:</td>
+                        <td>
+                            <input type="text" name="serverName" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>MySQL User:</td>
+                        <td>
+                            <input type="text" name="userName" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>MySQL Password:</td>
+                        <td>
+                            <input type="text" name="password" value="">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>MySQL DataBase:</td>
+                        <td>
+                            <input type="text" name="databaseName" value="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><h4>(NOTE: leave database blank if creating a database) SQL:</h4></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                        <textarea name="sqlQuery" required></textarea>
+                    </td>
+                    </tr>
+                </table>
+    
+                <button type="submit">Submit</button>
+                </fieldset>
+        </form>
+    </div>
+</body>
+</html>

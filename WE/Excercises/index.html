@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <form>
+        <label>Date Daalo: </label>
+        <input type="date" min="2022-03-05" max="2022-03-10">
+        <label>Phone Number: </label>
+        <input type="tel" pattern="[0-9]{4}-[0-9]{7}" placeholder="0311-2254678">
+        <label>Range: </label>
+        <input type="range" min="1" max="10">
+        <label>Select KARO: </label>
+        <select name="cars" multiple required>
+           <option value="Toyota">Toyota</option> 
+           <option value="Volvo">Volvo</option>
+           <option value="BMW">BMW</option>
+        </select>
+        <label>Color Picker: </label>
+        <input type="color" value="black">
+        <label>Enter URL: </label>
+        <input type="url">
+    </form> -->
+
+    <!-- <form> -->
+        <label>
+            Name: 
+        </label>
+        <input type="text" id="name">
+        <label>Phone: </label>
+        <input type="tel" id="phone">
+        <button onclick="handleSubmit()">Submit</button>
+    <!-- </form> -->
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Phone</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+            
+        </tbody>
+    </table>
+    <script>
+        function handleSubmit(){
+        let name = document.getElementById("name");
+        let p = document.getElementById("phone");
+        let z = `<tr>`;
+        let x = `<td>${name.value}</td>`;
+        let y = `<td>${p.value}</td>`;
+        
+        z += x;
+        z += y;
+        z += `</tr>`;
+        console.log(z);
+        console.log("saa");
+        document.getElementById("tbody").innerHTML += z;
+        setTimeout(()=>{}, 100000);
+        }
+    </script>
+</body>
+</html>

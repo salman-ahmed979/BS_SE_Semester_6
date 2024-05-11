@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+</head>
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        width: 30%;
+        height: 55vh;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    .container form {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        border: 1px solid black;
+        width: 60%;
+        height: auto;
+        padding: 2em;
+    }
+
+    .container label {
+        font-size: 1.2em;
+        font-weight: bold;
+
+    }
+
+    .container input {
+        width: 100%;
+        padding: 0.4em;
+        margin-top: 4%;
+        margin-bottom: 5%;
+    }
+
+    button {
+        padding: 0.7em;
+        cursor: pointer;
+        background-color: black;
+        color: #ffff;
+        border-radius: 1em;
+        border: none;
+    }
+
+    button:hover {
+        background-color: #555;
+        color: #fff;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <form action="login.php" method="POST">
+            <label>UserName: </label>
+            <input type="text" name="userName" placeholder="Enter UserName...">
+            <label>Password: </label>
+            <input type="password" name="password" placeholder="************">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
