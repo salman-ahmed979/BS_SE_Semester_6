@@ -1,0 +1,28 @@
+19K-1043
+Salman Ahmed Khan 
+SCD Assignment - II
+
+Divergent Change: Make changes in class/ methods when we add new thing
+
+class ShapeArea
+{
+public void calculateArea(Square s) {
+System.out.println(3.14*s.getRadius()*s.getRadius);
+}
+}
+
+--Refactor
+interface Shape{
+	double getRadius();
+}
+
+class ShapeArea
+{
+public void calculateArea(Shape s) {
+System.out.println(3.14*s.getRadius()*s.getRadius);
+}
+}
+
+Summary: Here when we wan't to calculate Rectangle area, we have to pass the object of Rectangle class
+in the parameter. 
+We refactor it by creating an interface, so we will not be require to manipulate the class code.

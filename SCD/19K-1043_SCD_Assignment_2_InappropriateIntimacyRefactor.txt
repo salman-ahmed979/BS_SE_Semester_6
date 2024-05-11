@@ -1,0 +1,86 @@
+19K-1043
+Salman Ahmed Khan 
+SCD Assignment - II
+
+Inappropriate Intimacy:
+
+class Student {
+
+public void generateMarksReport(Marks marks)
+{
+	if(marks.getGrade() == "A")
+	{	
+		System.out.println("Receive A");
+	}
+	else if(marks.getGrade() == "B")
+	{	
+		System.out.println("Receive B");
+	}
+	if(marks.getPercentage() >= 80)
+	{
+		System.out.println("Percentage above or 80");
+	}
+	else if(marks.getPercentage() < 80)
+	{
+		System.out.println("Percentage below 80");
+	}
+}
+}
+
+class Marks
+{
+	private int percentage;
+	private String grade;
+	Marks(int percentage, String grade)
+	{
+		this.percentage = percentage; this.grade = grade;	
+	}
+	public void getGrade(){return grade;}
+	public void getPercentage(){return percentage;}
+}
+
+--Refactor
+class Student {
+...
+public void getStudentReport(Marks marks)
+{
+	marks.generateMarksReport();
+}
+}
+
+class Marks
+{
+	private int percentage;
+	private String grade;
+	Marks(int percentage, String grade)
+	{
+		this.percentage = percentage; this.grade = grade;	
+	}
+	public void getGrade(){return grade;}
+	public void getPercentage(){return percentage;}
+	public void generateMarksReport()
+	{
+	if(getGrade() == "A")
+	{	
+		System.out.println("Receive A");
+	}
+	else if(getGrade() == "B")
+	{	
+		System.out.println("Receive B");
+	}
+	if(getPercentage() >= 80)
+	{
+		System.out.println("Percentage above or 80");
+	}
+	else if(getPercentage() < 80)
+	{
+		System.out.println("Percentage below 80");
+	}
+	}
+}
+
+Summary: Here the Student class was tightly coupled with the Marks class.
+The classes were intimating inaccurately with each other.
+
+The Student class had "generateMarksReport" method that was tightly coupled
+with Marks class, therefore we move the method to the Marks class.  

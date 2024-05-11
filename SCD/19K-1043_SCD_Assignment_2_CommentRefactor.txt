@@ -1,0 +1,26 @@
+19K-1043
+Salman Ahmed Khan 
+SCD Assignment - II
+
+Comments (a.k.a. Deodorant):
+
+// Function to perform the summation of array values
+int value(int[] arr)
+{	int sum = 0;
+	for (int i = 0; i < arr.size(); i++)	
+		sum += arr[i];
+	return sum;
+}
+
+-- Refactor by Rename Method
+
+int getArraySummation(int[] arr)
+{	int sum = 0;
+	for (int i = 0; i < arr.size(); i++)	
+		sum += arr[i];
+	return sum;
+}
+
+Summary: Here we have method named "value" which is ambigious and doesnot provide any meaning
+so, we provide the comments. However, when we refactor, we rename method to "getArraySummation" 
+that clearly tells what the method performs.
